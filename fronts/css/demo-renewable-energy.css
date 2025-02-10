@@ -1,0 +1,389 @@
+body {
+    font-size: 16px;
+}
+
+@media (min-width: 992px) {
+    #header .header-nav-main nav > ul > li {
+        margin: 0 20px;
+    }
+    #header .header-nav-main nav > ul > li:first-child {
+        margin-left: 0;
+    }
+    #header .header-nav-main nav > ul > li > a {
+        font-size: 18px;
+        padding: 0 !important;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark);
+}
+
+h3 {
+    text-transform: none;
+    font-weight: bold;
+    font-size: 2.3em;
+    line-height: 1.2em;
+}
+
+p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.custom-el-pos-1 {
+    margin-top: -100px;
+}
+
+.custom-el-pos-2 {
+    top: 25px;
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .custom-el-pos-2 {
+        top: 0;
+    }
+}
+
+.custom-el-pos-3 {
+    bottom: -25px !important;
+}
+
+@media (max-width: 1919px) {
+    .custom-shape-divider-1 {
+        min-width: 1920px;
+    }
+}
+
+.custom-shape-divider-1.custom-shape-divider-1-flip-horizonal {
+    transform: rotateY(180deg);
+}
+
+.hero {
+    height: 750px;
+}
+
+.hero-el-1 {
+    width: 1400px;
+    height: 1400px;
+    position: absolute;
+    border-radius: 100%;
+    top: -62%;
+    left: -21%;
+}
+
+.hero-el-2 {
+    width: 1400px;
+    height: 1400px;
+    position: absolute;
+    border-radius: 100%;
+    top: -65%;
+    left: -20.3%;
+    background: var(--primary-100);
+}
+
+.custom-text-1 {
+    font-size: 200px;
+    position: relative;
+    top: 100px;
+}
+
+.custom-text-1 em {
+    font-size: 0.7em;
+    font-style: normal;
+}
+
+@media (min-width: 992px) {
+    .custom-text-1 {
+        font-size: 180px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .custom-text-1 {
+        font-size: 300px;
+    }
+}
+
+.custom-svg-position-1 {
+    position: absolute;
+    top: -500px;
+    left: 100px;
+    opacity: 0.2;
+}
+
+.custom-svg-position-2 {
+    position: absolute;
+    top: 300px;
+    left: -62%;
+    opacity: 0.2;
+    z-index: 0;
+    max-width: 2000px;
+}
+
+.custom-svg-position-3 {
+    position: absolute;
+    top: 395px;
+    right: -60%;
+    opacity: 0.2;
+    z-index: 0;
+    max-width: 2000px;
+}
+
+@keyframes customLines1anim {
+    from {
+        stroke-dasharray: 1600;
+        stroke-dashoffset: 1600;
+    }
+    to {
+        stroke-dasharray: 1600;
+        stroke-dashoffset: 0;
+    }
+}
+
+.customLines1anim {
+    animation-name: customLines1anim;
+}
+
+@media (min-width: 992px) {
+    .custom-highlight-1 {
+        position: relative;
+        z-index: 1;
+    }
+    .custom-highlight-1:after {
+        content: '';
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 0%;
+        height: 25%;
+        background-color: var(--primary);
+        z-index: -1;
+        right: 0;
+    }
+    .custom-highlight-1-tertiary:after {
+        background-color: var(--tertiary);
+    }
+}
+
+.custom-highlight-anim:after {
+    animation-name: customHighlightAnim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.custom-highlight-anim-delay:after {
+    animation-delay: 1s;
+}
+
+@keyframes customHighlightAnim {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 52%;
+        opacity: 1;
+    }
+}
+
+.carousel-half-full-width-wrapper > .owl-carousel .owl-stage-outer {
+    padding-top: 40px;
+    margin-bottom: 0;
+}
+
+.carousel-half-full-width-wrapper > .owl-carousel .owl-nav {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    transform: none;
+    text-align: left;
+}
+
+.carousel-half-full-width-wrapper > .owl-carousel .owl-nav button.owl-prev, .carousel-half-full-width-wrapper > .owl-carousel .owl-nav button.owl-next {
+    position: static;
+    transform: none;
+}
+
+.carousel-half-full-width-wrapper > .owl-carousel .owl-nav button.owl-prev {
+    margin-right: 5px;
+}
+
+.carousel-half-full-width-wrapper > .owl-carousel .owl-nav button.owl-next {
+    margin-left: 5px;
+}
+
+.custom-block-1:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: #000;
+    display: block;
+    top: -40px;
+    left: 0;
+}
+
+.custom-block-1.org:after {
+    background: #dc340b !important;
+}
+
+
+.custom-block-1 h4 {
+    position: relative;
+    top: -20px;
+}
+
+.custom-block-1.custom-block-1-bottom:after {
+    top: auto;
+    bottom: -40px;
+}
+
+.custom-block-1.custom-block-1-bottom h4 {
+    top: 20px;
+}
+
+.custom-min-width-1 {
+    min-width: 195px;
+}
+/* General */
+:root {
+    --border-radius: 4px;
+    --border-radius2x: 8px;
+    --default: #484848;
+}
+
+/* Skin Colors */
+:root {
+    --primary: #dc340b;
+    --primary-100: #c52808;
+    --primary-200: #c43e0d;
+    --primary-300: #b83a0c;
+    --primary--100: #f15820;
+    --primary--200: #f1612c;
+    --primary--300: #f26a38;
+    --primary-rgba-0: rgba(232, 73, 15, 0);
+    --primary-rgba-10: rgba(232, 73, 15, 0.1);
+    --primary-rgba-20: rgba(232, 73, 15, 0.2);
+    --primary-rgba-30: rgba(232, 73, 15, 0.3);
+    --primary-rgba-40: rgba(232, 73, 15, 0.4);
+    --primary-rgba-50: rgba(232, 73, 15, 0.5);
+    --primary-rgba-60: rgba(232, 73, 15, 0.6);
+    --primary-rgba-70: rgba(232, 73, 15, 0.7);
+    --primary-rgba-80: rgba(232, 73, 15, 0.8);
+    --primary-rgba-90: rgba(232, 73, 15, 0.9);
+    --secondary: #d43900;
+    --secondary-100: #bb3200;
+    --secondary-200: #ae2f00;
+    --secondary-300: #a12b00;
+    --secondary--100: #ee4000;
+    --secondary--200: #fa4300;
+    --secondary--300: #ff4a08;
+    --secondary-rgba-0: rgba(212, 57, 0, 0);
+    --secondary-rgba-10: rgba(212, 57, 0, 0.1);
+    --secondary-rgba-20: rgba(212, 57, 0, 0.2);
+    --secondary-rgba-30: rgba(212, 57, 0, 0.3);
+    --secondary-rgba-40: rgba(212, 57, 0, 0.4);
+    --secondary-rgba-50: rgba(212, 57, 0, 0.5);
+    --secondary-rgba-60: rgba(212, 57, 0, 0.6);
+    --secondary-rgba-70: rgba(212, 57, 0, 0.7);
+    --secondary-rgba-80: rgba(212, 57, 0, 0.8);
+    --secondary-rgba-90: rgba(212, 57, 0, 0.9);
+    --tertiary: #121212;
+    --tertiary-100: #2c2b2b;
+    --tertiary-200: #262525;
+    --tertiary-300: #1f1f1f;
+    --tertiary--100: #464545;
+    --tertiary--200: #4c4b4b;
+    --tertiary--300: #535151;
+    --tertiary-rgba-0: rgba(57, 56, 56, 0);
+    --tertiary-rgba-10: rgba(57, 56, 56, 0.1);
+    --tertiary-rgba-20: rgba(57, 56, 56, 0.2);
+    --tertiary-rgba-30: rgba(57, 56, 56, 0.3);
+    --tertiary-rgba-40: rgba(57, 56, 56, 0.4);
+    --tertiary-rgba-50: rgba(57, 56, 56, 0.5);
+    --tertiary-rgba-60: rgba(57, 56, 56, 0.6);
+    --tertiary-rgba-70: rgba(57, 56, 56, 0.7);
+    --tertiary-rgba-80: rgba(57, 56, 56, 0.8);
+    --tertiary-rgba-90: rgba(57, 56, 56, 0.9);
+    --quaternary: #312626;
+    --quaternary-100: #231b1b;
+    --quaternary-200: #1b1515;
+    --quaternary-300: #141010;
+    --quaternary--100: #3f3131;
+    --quaternary--200: #473737;
+    --quaternary--300: #4e3c3c;
+    --quaternary-rgba-0: rgba(49, 38, 38, 0);
+    --quaternary-rgba-10: rgba(49, 38, 38, 0.1);
+    --quaternary-rgba-20: rgba(49, 38, 38, 0.2);
+    --quaternary-rgba-30: rgba(49, 38, 38, 0.3);
+    --quaternary-rgba-40: rgba(49, 38, 38, 0.4);
+    --quaternary-rgba-50: rgba(49, 38, 38, 0.5);
+    --quaternary-rgba-60: rgba(49, 38, 38, 0.6);
+    --quaternary-rgba-70: rgba(49, 38, 38, 0.7);
+    --quaternary-rgba-80: rgba(49, 38, 38, 0.8);
+    --quaternary-rgba-90: rgba(49, 38, 38, 0.9);
+    --dark: #121212;
+    --dark-100: #313131;
+    --dark-200: #2b2b2b;
+    --dark-300: #252525;
+    --dark--100: #4b4b4b;
+    --dark--200: #515151;
+    --dark--300: #585858;
+    --dark-rgba-0: rgba(62, 62, 62, 0);
+    --dark-rgba-10: rgba(62, 62, 62, 0.1);
+    --dark-rgba-20: rgba(62, 62, 62, 0.2);
+    --dark-rgba-30: rgba(62, 62, 62, 0.3);
+    --dark-rgba-40: rgba(62, 62, 62, 0.4);
+    --dark-rgba-50: rgba(62, 62, 62, 0.5);
+    --dark-rgba-60: rgba(62, 62, 62, 0.6);
+    --dark-rgba-70: rgba(62, 62, 62, 0.7);
+    --dark-rgba-80: rgba(62, 62, 62, 0.8);
+    --dark-rgba-90: rgba(62, 62, 62, 0.9);
+    --light: #FFF;
+    --light-100: #f2f2f2;
+    --light-200: #ececec;
+    --light-300: #e6e6e6;
+    --light--100: #ffffff;
+    --light--200: #ffffff;
+    --light--300: #ffffff;
+    --light-rgba-0: rgba(255, 255, 255, 0);
+    --light-rgba-10: rgba(255, 255, 255, 0.1);
+    --light-rgba-20: rgba(255, 255, 255, 0.2);
+    --light-rgba-30: rgba(255, 255, 255, 0.3);
+    --light-rgba-40: rgba(255, 255, 255, 0.4);
+    --light-rgba-50: rgba(255, 255, 255, 0.5);
+    --light-rgba-60: rgba(255, 255, 255, 0.6);
+    --light-rgba-70: rgba(255, 255, 255, 0.7);
+    --light-rgba-80: rgba(255, 255, 255, 0.8);
+    --light-rgba-90: rgba(255, 255, 255, 0.9);
+}
+
+/* Skin Colors - Inverse */
+:root {
+    --primary-inverse: #FFF;
+    --secondary-inverse: #FFF;
+    --tertiary-inverse: #FFF;
+    --quaternary-inverse: #FFF;
+    --dark-inverse: #FFF;
+    --light-inverse: #777;
+}
+
+/* Grey Colors */
+:root {
+    --grey: #969696;
+    --grey-100: #f4f4f4;
+    --grey-200: #eaeaea;
+    --grey-300: #e5e5e5;
+    --grey-400: #e0e0e0;
+    --grey-500: #dbdbdb;
+    --grey-600: #cecece;
+    --grey-700: #c1c1c1;
+    --grey-800: #a8a8a8;
+    --grey-900: #8e8e8e;
+    --grey-1000: #757575;
+}
